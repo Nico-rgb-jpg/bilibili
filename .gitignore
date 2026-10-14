@@ -1,0 +1,10 @@
+# Base de données locale (recréée automatiquement)
+storage/*.sqlite
+storage/*.sqlite-*
+
+# Système / éditeurs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
