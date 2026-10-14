@@ -7,6 +7,10 @@ declare(strict_types=1);
 
 $GLOBALS['__config'] = require __DIR__ . '/../config/config.php';
 
+// Vérifie la version de PHP et les extensions avant tout le reste.
+require_once __DIR__ . '/requirements.php';
+bilibili_check_requirements($GLOBALS['__config']);
+
 require_once __DIR__ . '/helpers.php';
 
 date_default_timezone_set(config('app.timezone'));

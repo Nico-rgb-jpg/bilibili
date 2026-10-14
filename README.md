@@ -38,15 +38,22 @@ un planning de diffusion hebdomadaire, une liste de séries favorites et le suiv
 
 ## Lancer le projet
 
-Prérequis : **PHP 8.1 ou plus** avec l'extension `pdo_sqlite` (activée par défaut dans la plupart des installations).
+Prérequis : **PHP 8.1 ou plus** avec l'extension `pdo_sqlite`.
+
+**Le plus simple (Windows)** : double-cliquer sur `lancer.bat`. Le site s'ouvre sur http://localhost:8000
+(PHP doit être installé, par exemple via XAMPP dans `C:\xampp`). Sur macOS / Linux : `./lancer.sh`.
+
+**En ligne de commande**, depuis le dossier du projet :
 
 ```bash
-git clone https://github.com/<votre-pseudo>/bilibili.git
-cd bilibili
 php -S localhost:8000 -t public
 ```
 
-Ouvrez ensuite http://localhost:8000. La base SQLite est **créée et remplie automatiquement** à la première visite.
+**Avec XAMPP / WAMP / MAMP** : placer le dossier `bilibili` dans `htdocs` (ou `www`), démarrer Apache,
+puis ouvrir http://localhost/bilibili/.
+
+La base SQLite est **créée et remplie automatiquement** à la première visite. S'il manque quelque chose
+(version de PHP, extension SQLite…), une page explique quoi corriger.
 
 Comptes de démonstration :
 
@@ -68,6 +75,7 @@ Pour réinitialiser les données : `php database/init.php --reset`
 
 ```
 bilibili/
+├── lancer.bat / lancer.sh    Lancement en un double-clic
 ├── config/config.php         Configuration (base de données, sécurité)
 ├── database/
 │   ├── schema.sqlite.sql     Schéma SQLite
