@@ -4,6 +4,8 @@ Application web de streaming inspirée de Netflix, développée en **PHP 8, SQL,
 Elle couvre l'inscription et la connexion des utilisateurs, la gestion de compte, un catalogue dynamique,
 un planning de diffusion hebdomadaire, une liste de séries favorites et le suivi de visionnage épisode par épisode.
 
+> **Note :** je republie ce projet dans une nouvelle version. Les fichiers d'origine ont été perdus ou étaient devenus obsolètes, je l'ai donc repris et mis à jour.
+
 ![Page d'accueil](docs/captures/accueil.png)
 
 ## Fonctionnalités
